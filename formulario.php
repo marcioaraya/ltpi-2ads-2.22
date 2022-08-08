@@ -7,11 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Primeiro Programa</h1>
-    <?php
-        $nome = $_GET["nome"];
-        echo "Olá! $nome";
-
-    ?>
+    <form action="primeiro.php" method="GET">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome">
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>
