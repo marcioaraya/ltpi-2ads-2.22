@@ -6,12 +6,12 @@ Este repositório contém os códigos elaborados na Disciplina Linguagem Técnic
   
 Use o comando  
 ```
-git clone https://github.com/marcioaraya/lpti-2ads-2.22.git 
+git clone https://github.com/marcioaraya/ltpi-2ads-2.22.git 
 ```
   
 Se desejar criar uma pasta com um nome mais amigável pode acrescentar o nome da pasta que deseja criar, por exemplo `adsltp`, no final do comando `git clone`:
 ```
-git clone https://github.com/marcioaraya/lpti-2ads-2.22.git adsltp
+git clone https://github.com/marcioaraya/ltpi-2ads-2.22.git adsltp
 ```
   
  
