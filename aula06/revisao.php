@@ -39,6 +39,17 @@
         $aluno[3]["sexo"] = "M";
         $aluno[3]["frequencia"] = 1.00;
 
+        echo "<table border=\"1\">";
+        echo "<tr><th>Nome</th><th>Nota1</th><th>Nota2</th><th>Sexo</th><th>Freq</th></tr>";
+        foreach($aluno as $al){
+            echo "<tr>";
+            foreach($al as $v){
+                echo "<td>$v</td>" ;
+            }
+            echo '</tr>';
+        }
+        echo "</table>";
+
 
 
     ?>
