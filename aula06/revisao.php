@@ -50,8 +50,20 @@
         }
         echo "</table>";
 
-
-
+# Exercício: 
+# 1) crie uma função media($n1, $n2) que receba duas notas e devolva a média das mesmas.
+# 2) cria uma função situacao($media, $frequencia) que retorne a situação do aluno
+#    Se ($frequencia < 0.75) então $situacao = "Reprovado por falta";
+#    Se (frequencia >= 0.75)
+#       Se ($media < 2.0) então
+#            $situacao = "Reprovado por nota";
+#        Senão Se ($média >2 E $media <6.0) então
+#            $situacao = "Exame Final"
+#        Senão Se ($media >= 6) então 
+#            $situacao = "Aprovado"
+#        Fim-Se
+# 3) Acrescente duas colunas na tabela para exibir a média calculada e a situação do aluno
+#    | Nome  | Sexo | Nota 1 | Nota 2 | Freq | Média |          Situação           |
     ?>
 </body>
 </html>
