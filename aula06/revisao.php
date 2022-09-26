@@ -40,8 +40,10 @@
         $aluno[3]["frequencia"] = 1.00;
 
         echo "<table border=\"1\">";
-        echo "<tr><th>Nome</th><th>Nota1</th><th>Nota2</th><th>Sexo</th><th>Freq</th></tr>";
+        echo "<tr><th>Nome</th><th>Nota1</th><th>Nota2</th><th>Sexo</th><th>Freq</th><th>Média</th><th>Situação</th></tr>";
         foreach($aluno as $al){
+            $al["media"] = media($al["nota1"], $al["nota2"]);
+            $al["situacao"] = situacao($al["media"], $al["frequencia"]);
             echo "<tr>";
             foreach($al as $v){
                 echo "<td>$v</td>" ;
@@ -49,6 +51,24 @@
             echo '</tr>';
         }
         echo "</table>";
+
+        function media($n1, $n2){
+            return ($n1 + $n2)/2;
+        }
+
+        function situacao($media, $frequencia){
+            if ($frequencia < 0.75){
+                return "Reprovado por faltas";
+            } else {
+                if ($media < 2) {
+                    return "Reprovado por nota";
+                } elseif ($media < 6.0) {
+                    return "Exame Final";
+                } else {
+                    return "Aprovado";
+                }
+            }
+        }
 
 # Exercício: 
 # 1) crie uma função media($n1, $n2) que receba duas notas e devolva a média das mesmas.
