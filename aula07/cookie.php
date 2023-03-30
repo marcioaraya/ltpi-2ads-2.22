@@ -14,13 +14,13 @@
    é gerado conteúdo html antes de executar o comando setcookie 
    ocorre erro, porque a instrução para salvar cookies
    deve ir no cabeçalho do protocolo http.
-   
+   */
         for($i=0;$i<35;$i++){
             echo "<p>12345678901234567890123456789012345678901234567890</p>";
             echo "<p>         1         2         3         4         5</p>";
         }
-*/
-        setcookie("nome", "marcio.araya");
+
+        setcookie("nome", "marcio.araya", time()+60);
         
     ?>
     
