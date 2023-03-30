@@ -11,6 +11,7 @@
     <?php
         $nome = ['Mateus', 'Marcos', 'Lucas', 'João'];
         $capitulos = [ 28, 16, 24, 21];
+        $nome = array('Mateus', 'Marcos', 'Lucas', 'João');
 
         # exiba os nomes do vetor em uma tabela HTML
         echo '<table border="1">';
@@ -25,7 +26,7 @@
         }
         echo '</tr>';
         echo '</table>';
-
+echo $nome[1]."<br>";
     ?>
 </body>
 </html>
